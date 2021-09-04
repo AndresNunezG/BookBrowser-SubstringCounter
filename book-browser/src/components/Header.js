@@ -4,7 +4,7 @@ import './styles/Header.css'
 
 export default function Header() {
     return (
-        <div className="Header__container">
+        <header className="Header__container">
             <div className="Title__container">
                 <h1 className="Title-1">Book&nbsp;</h1>
                 <h1 className="Title-2">Browser</h1>
@@ -20,6 +20,6 @@ export default function Header() {
                 >
                 </input>
             </div>
-        </div>
+        </header>
     )
 }

@@ -4,7 +4,7 @@ import './styles/Footer.css'
 
 export default function Footer() {
     return (
-        <div className="Footer__container">
+        <section className="Footer__container">
             <div className="Footer-item">
                 <i className="Footer-item-icon fab fa-github"></i>
                 <a
@@ -32,6 +32,6 @@ export default function Footer() {
                 &nbsp;Icons by Fontawesome
                 </a>
             </div>
-        </div>
+        </section>
     )
 }
