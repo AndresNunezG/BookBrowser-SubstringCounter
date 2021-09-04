@@ -1,5 +1,5 @@
 # Dependencies
-book_browser/node_modules
+/book-browser/node_modules
 /.pnp
 .pnp.js
 
