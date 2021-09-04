@@ -8,6 +8,7 @@
 
 # Book Browser
 
+`npm run start`
 
 
 # Substring Problem
