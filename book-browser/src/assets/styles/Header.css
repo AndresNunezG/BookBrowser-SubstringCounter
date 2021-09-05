@@ -26,6 +26,12 @@
     width: 15em;
 }
 
+.SearchBar-button {
+    color: inherit;
+    background: none;
+    border-style: none;
+}
+
 .SearchBar-icon__container {
     position: absolute;
     right: 0;

@@ -6,13 +6,19 @@ import BookCard from './BookCard';
 import ErrorImage from '../assets/images/ErrorImage.svg';
 import '../assets/styles/CardsContainer.css';
 
-export default function CardsContainer() {
+export default function CardsContainer(props) {
     const [booksData, setBooksData] = useState("");
     const [loading, setLoading] = useState(false);
     const [fetchError, setFetchError] = useState(null);
+    const defaultAPI = "http://openlibrary.org/search.json?q=the+lord+of+the+rings";
     useEffect(() => {
         setLoading(true);
-        fetch("http://openlibrary.org/search.json?q=the+lord+of+the+rings")
+        fetch(props.query
+            ?
+            `http://openlibrary.org/search.json?q=${props.query.replaceAll(' ', '+').toLowerCase()}`
+            :
+            defaultAPI
+            )
          .then(response => response.json())
          .then(data => {
              setBooksData(data);
@@ -22,7 +28,7 @@ export default function CardsContainer() {
              setLoading(false);
              setFetchError(error);
             });
-    }, [])
+    }, [props.query])
     if (loading === true) {
         return(
             <section className="CardsContainer">
@@ -43,7 +49,6 @@ export default function CardsContainer() {
             </section>
         )
     }
-    console.log(booksData.docs)
     return(
         <section className="CardsContainer">
             <ul className="CardsList">

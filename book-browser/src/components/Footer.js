@@ -9,6 +9,8 @@ export default function Footer() {
                 <a
                  className="Footer-item-text"
                  href="https://github.com/AndresNunezG/BookBrowser-SubstringCounter"
+                 target="_blank"
+                 rel="noreferrer"
                 >
                 &nbsp;Visit the code
                 </a>
@@ -18,6 +20,8 @@ export default function Footer() {
                 <a
                  className="Footer-item-text"
                  href="https://openlibrary.org/developers/api"
+                 target="_blank"
+                 rel="noreferrer"
                 >
                 &nbsp;API OpenLibrary
                 </a>
@@ -27,6 +31,8 @@ export default function Footer() {
                 <a
                  className="Footer-item-text"
                  href="https://fontawesome.com/"
+                 target="_blank"
+                 rel="noreferrer"
                 >
                 &nbsp;Icons by Fontawesome
                 </a>
@@ -36,6 +42,8 @@ export default function Footer() {
                 <a
                  className="Footer-item-text"
                  href="https://www.manypixels.co/gallery"
+                 target="_blank"
+                 rel="noreferrer"
                 >
                 &nbsp;Images by ManyPixels
                 </a>

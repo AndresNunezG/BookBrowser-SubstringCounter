@@ -10,7 +10,7 @@ export default function BookCard(props) {
                 <p className="Card-title">{props.bookData.title || 'Unkown Title'}</p>
                 <p className="Card-author">{props.bookData.author_name || 'Author Unknown'}</p>
                 <p className="Card-year">{props.bookData.first_publish_year || 'Unknown publication date'}</p>
-                <p className="Card-isbn">{props.bookData.isbn && props.bookData.isbn[0] || 'ISBN unknown' }</p>
+                <p className="Card-isbn">{props.bookData.isbn ? props.bookData.isbn[0] : 'ISBN unknown' }</p>
             </div>
             <div className="Card-cover">
                 {props.bookData.cover_i
@@ -18,7 +18,7 @@ export default function BookCard(props) {
                     <img src={coverFetch(props.bookData.cover_i)} alt="book cover"></img>
                     :
                     <div className="Card-NoCover">
-                        <i class="fas fa-book-open"></i>
+                        <i className="fas fa-book-open"></i>
                         <p>No cover available</p>
                     </div>
                 }
