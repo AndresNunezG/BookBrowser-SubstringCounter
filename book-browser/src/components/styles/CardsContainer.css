@@ -1,4 +1,18 @@
+.CardsContainer,
+.CardsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .CardsContainer {
-    height: 93vh;
+    padding: 1em;
+    min-height: 93vh;
     background-color: var(--main-bg-color);
+}
+
+.CardsList {
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
 }

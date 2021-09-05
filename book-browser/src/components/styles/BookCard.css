@@ -1,0 +1,9 @@
+.Card__container {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: var(--header-bg-color);
+    color: var(--main-fg-color);
+}
