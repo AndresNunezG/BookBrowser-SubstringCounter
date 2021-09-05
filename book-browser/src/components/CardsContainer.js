@@ -1,4 +1,5 @@
-import React, { useEffect, useState} from 'react';
+import React from 'react';
+import useFetchBooks from '../hooks/useFetchBooks';
 
 import Loader from './Loader';
 import BookCard from './BookCard';
@@ -7,28 +8,13 @@ import ErrorImage from '../assets/images/ErrorImage.svg';
 import '../assets/styles/CardsContainer.css';
 
 export default function CardsContainer(props) {
-    const [booksData, setBooksData] = useState("");
-    const [loading, setLoading] = useState(false);
-    const [fetchError, setFetchError] = useState(null);
-    const defaultAPI = "http://openlibrary.org/search.json?q=the+lord+of+the+rings";
-    useEffect(() => {
-        setLoading(true);
-        fetch(props.query
-            ?
-            `http://openlibrary.org/search.json?q=${props.query.replaceAll(' ', '+').toLowerCase()}`
-            :
-            defaultAPI
-            )
-         .then(response => response.json())
-         .then(data => {
-             setBooksData(data);
-             setLoading(false);
-            })
-         .catch(error => {
-             setLoading(false);
-             setFetchError(error);
-            });
-    }, [props.query])
+    /**
+     * CardsContainer component recieve props:
+     *      -> query: users request to find in open library API
+     * Stateful component with states: booksData - loading - fetchError
+     * Logical component with API consuming
+    */
+    const {booksData, loading, fetchError} = useFetchBooks(props.query);
     if (loading === true) {
         return(
             <section className="CardsContainer">
