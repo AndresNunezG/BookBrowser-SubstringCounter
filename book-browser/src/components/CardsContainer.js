@@ -3,7 +3,8 @@ import React, { useEffect, useState} from 'react';
 import Loader from './Loader';
 import BookCard from './BookCard';
 
-import './styles/CardsContainer.css';
+import ErrorImage from '../assets/images/ErrorImage.svg';
+import '../assets/styles/CardsContainer.css';
 
 export default function CardsContainer() {
     const [booksData, setBooksData] = useState("");
@@ -17,12 +18,28 @@ export default function CardsContainer() {
              setBooksData(data);
              setLoading(false);
             })
-         .catch(error => setFetchError(error));
+         .catch(error => {
+             setLoading(false);
+             setFetchError(error);
+            });
     }, [])
     if (loading === true) {
         return(
             <section className="CardsContainer">
                 <Loader />
+            </section>
+        )
+    }
+    if (fetchError !== null) {
+        return(
+            <section className="CardsContainer">
+                <div>
+                    <img src={ErrorImage} alt="error"></img>
+                </div>
+                <div>
+                    <h1 style={{color: "var(--scnd-fg-color)", fontSize: "32px"}}>Oops!</h1>
+                    <p>It seems like there was a problem, try again later</p>
+                </div>
             </section>
         )
     }

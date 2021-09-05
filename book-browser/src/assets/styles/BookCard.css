@@ -1,9 +1,16 @@
 .Card__container {
-    width: 300px;
+    width: 30%;
     height: 150px;
     padding: 5px;
     margin: 8px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--header-bg-color);
     color: var(--main-fg-color);
+}
+
+.Card-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
 }
