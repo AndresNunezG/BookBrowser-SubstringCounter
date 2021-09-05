@@ -5,6 +5,7 @@ import Loader from './Loader';
 import BookCard from './BookCard';
 
 import ErrorImage from '../assets/images/ErrorImage.svg';
+import NotFoundImage from '../assets/images/NotFoundImage.svg';
 import '../assets/styles/CardsContainer.css';
 
 export default function CardsContainer(props) {
@@ -24,13 +25,27 @@ export default function CardsContainer(props) {
     }
     if (fetchError !== null) {
         return(
-            <section className="CardsContainer">
+            <section className="CardsContainer Alt_CardContainer">
                 <div>
                     <img src={ErrorImage} alt="error"></img>
                 </div>
                 <div>
-                    <h1 style={{color: "var(--scnd-fg-color)", fontSize: "32px"}}>Oops!</h1>
+                    <h1 className="AltCard-title">Oops!</h1>
                     <p>It seems like there was a problem, try again later</p>
+                </div>
+            </section>
+        )
+    }
+    if (booksData.numFound === 0) {
+        console.log("hola")
+        return(
+            <section className="CardsContainer Alt_CardContainer">
+                <div>
+                    <img src={NotFoundImage} alt="not found"></img>
+                </div>
+                <div>
+                    <h1 className="AltCard-title">No results for your search</h1>
+                    <p>try new terms and keywords</p>
                 </div>
             </section>
         )

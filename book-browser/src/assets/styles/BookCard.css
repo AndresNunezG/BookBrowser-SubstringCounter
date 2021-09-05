@@ -22,8 +22,14 @@
 }
 
 .Card-title {
+    font-size: 15px;
     font-weight: 600;
     color: var(--main-fg-color);
+}
+
+.Card-isbn {
+    font-size: 12px;
+    font-style: italic;
 }
 
 .Card-cover {

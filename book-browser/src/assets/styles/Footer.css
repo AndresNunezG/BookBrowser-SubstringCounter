@@ -6,7 +6,7 @@
 }
 
 .Footer-item {
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     font-size: 1em;

@@ -7,30 +7,6 @@
 
 :root {
   /*Color pallete*/
-  --header-bg-color: #6C6D8A;
-  --main-fg-color: #FFFFFF;
-  --scnd-fg-color: #6D71F9;
-  --main-bg-color: #272848;
-}
-
-:root {
-  /*Color pallete*/
-  --header-bg-color: #FFE4D5;
-  --main-fg-color: #DADADA;
-  --scnd-fg-color: #000000;
-  --main-bg-color: #ACCBD2;
-}
-
-:root {
-  /*Color pallete*/
-  --header-bg-color: #151B27;
-  --main-fg-color: #F5EEE4;
-  --scnd-fg-color: #F3F6FB;
-  --main-bg-color: #D0EDF5;
-}
-
-:root {
-  /*Color pallete*/
   --header-bg-color: #0A1C2F;
   --main-bg-color: #F4F9FC;
   --main-fg-color: #F5EEE4;
