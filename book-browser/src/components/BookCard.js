@@ -3,6 +3,9 @@ import React from 'react';
 import '../assets/styles/BookCard.css';
 
 export default function BookCard(props) {
+    /**
+     * Stateless presentational component to show book most useful information and cover (if it has)
+    */
     const coverFetch = cover_i => `https://covers.openlibrary.org/b/id/${cover_i}-M.jpg`;
     return(
         <li className="Card__container">

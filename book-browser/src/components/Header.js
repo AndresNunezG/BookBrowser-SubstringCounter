@@ -3,6 +3,14 @@ import React from 'react';
 import '../assets/styles/Header.css';
 
 export default function Header(props) {
+    /**
+     * Header presentational component to receive the search request
+     * Stateless
+     * CardsContainer component recieve props:
+     *      -> onSubmit: trigger request to the API when the user submit the form
+     *      -> onChange: stores the value of the input
+     *      -> inputValue: set the value of the input
+    */
     return (
         <header className="Header__container">
             <div className="Title__container">

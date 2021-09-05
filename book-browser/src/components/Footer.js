@@ -2,6 +2,9 @@ import React from 'react';
 import '../assets/styles/Footer.css';
 
 export default function Footer() {
+    /**
+     * Stateless presentational component to attribute copyright
+    */
     return (
         <section className="Footer__container">
             <div className="Footer-item">

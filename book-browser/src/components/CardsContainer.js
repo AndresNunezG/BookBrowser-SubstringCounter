@@ -12,7 +12,7 @@ export default function CardsContainer(props) {
      * CardsContainer component recieve props:
      *      -> query: users request to find in open library API
      * Stateful component with states: booksData - loading - fetchError
-     * Logical component with API consuming
+     * Logical component using custom hooks useFetchBooks
     */
     const {booksData, loading, fetchError} = useFetchBooks(props.query);
     if (loading === true) {

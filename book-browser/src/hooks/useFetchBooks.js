@@ -1,6 +1,16 @@
 import { useState, useEffect } from "react";
 
 const useFetchBooks = (query) => {
+    /**
+     * Custom hook to fetch data of open library API
+     * Hooks used:
+     *      -> useState
+     *      -> useEffect
+     * returns:
+     *      -> booksData: Array of books result of the request
+     *      -> loading: Boolean value indicates charge status
+     *      -> fetchError: Error value indicates if request failed
+    */
     const [booksData, setBooksData] = useState("");
     const [loading, setLoading] = useState(false);
     const [fetchError, setFetchError] = useState(null);
