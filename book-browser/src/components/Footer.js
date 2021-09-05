@@ -17,7 +17,7 @@ export default function Footer() {
                 <i className="Footer-item-icon fas fa-server"></i>
                 <a
                  className="Footer-item-text"
-                 href="https://fontawesome.com/"
+                 href="https://openlibrary.org/developers/api"
                 >
                 &nbsp;API OpenLibrary
                 </a>
@@ -26,9 +26,18 @@ export default function Footer() {
                 <i className="Footer-item-icon fas fa-info"></i>
                 <a
                  className="Footer-item-text"
-                 href="https://openlibrary.org/developers/api"
+                 href="https://fontawesome.com/"
                 >
                 &nbsp;Icons by Fontawesome
+                </a>
+            </div>
+            <div className="Footer-item">
+                <i className="Footer-item-icon fas fa-image"></i>
+                <a
+                 className="Footer-item-text"
+                 href="https://www.manypixels.co/gallery"
+                >
+                &nbsp;Images by ManyPixels
                 </a>
             </div>
         </section>

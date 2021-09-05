@@ -32,7 +32,8 @@
 :root {
   /*Color pallete*/
   --header-bg-color: #0A1C2F;
+  --main-bg-color: #F4F9FC;
   --main-fg-color: #F5EEE4;
   --scnd-fg-color: #06C972;
-  --main-bg-color: #F4F9FC;
+  --thrd-fg-color: #DFE4E3;
 }
