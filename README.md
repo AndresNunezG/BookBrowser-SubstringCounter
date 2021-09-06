@@ -1,15 +1,32 @@
 
 ## Index
 
+- [Clone the repository](#clone-the-repository)
 - [Book Browser](#book-browser)
+  - [Setup](#setup)
 - [Substring Problem](#substring-problem)
   - [Run script](#run-script)
   - [Example of usage](#example-of-usage)
 
+# Clone the repository
+
+`git clone https://github.com/AndresNunezG/BookBrowser-SubstringCounter.git`
+
 # Book Browser
 
-`npm run start`
+## Setup
 
+- Install Node modules **INSIDE** the `book-browser` folder
+
+⚠️ `NodeJS` and `npm` must be installed previously (https://nodejs.org/es/)
+
+`cd book-browser`
+
+`npm install node-modules`
+
+- Run the React Application (default port: 3000)
+
+`npm run start`
 
 # Substring Problem
 
@@ -17,7 +34,7 @@ This script returns the number of appearances of a substring in a string, the re
 
 ## Run script
 
-Python version: `3.9.6`
+Python version: `3.9.6` (https://www.python.org/downloads/)
 
 Script path: `substring-problem/main.py`
 
